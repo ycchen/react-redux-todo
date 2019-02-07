@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+#### `npm install –save redux`
+#### `npm install –save redux-devtools`
+#### `npm install –save react-redux`
+
+https://itnext.io/tutorial-simple-react-redux-app-cd559621ec00
+https://github.com/nunosoares27/React_Redux_todoApp/blob/master/src/containers/CreateTodo.js
