@@ -71,6 +71,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 #### `npm install –save redux`
 #### `npm install –save redux-devtools`
 #### `npm install –save react-redux`
+#### `npm install redux react-redux redux-thunk --save`
 
 https://itnext.io/tutorial-simple-react-redux-app-cd559621ec00
 https://github.com/nunosoares27/React_Redux_todoApp/blob/master/src/containers/CreateTodo.js

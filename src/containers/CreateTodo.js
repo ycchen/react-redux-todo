@@ -15,6 +15,7 @@ class CreateTodo extends Component {
   }
   
   onChangeTodoText(e) {
+    console.log('=====', e.target.value)
     this.setState({
       todotext: e.target.value
     })
@@ -25,8 +26,22 @@ class CreateTodo extends Component {
       <div className="form-group row">
         <div className="col-sm-10">
           <input onChange={this.onChangeTodoText} type="text" className="form-control" placeholder="add todo here" />
-          <button type="button" className="btn btn-danger">Cancel</button>
-          <button type="button" className="btn btn-success">Add Todo</button>
+          <button 
+            type="button"
+            onClick={() => {
+              this.setState({ todotext: ''})
+              }
+            }
+            style={{ marginTop: "25px", marginRight: "15px"}}
+            className="btn btn-danger">Cancel</button>
+          <button 
+            type="button" 
+            onClick={() => {
+              this.props.addTodo(this.state.todotext)
+              this.setState({todotext: ''})
+            }}
+            style={{marginTop: "25px"}}
+            className="btn btn-success">Add Todo</button>
         </div>
       </div>
     )

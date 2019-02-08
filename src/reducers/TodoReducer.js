@@ -21,7 +21,7 @@ const TodoReducer = (state=INITIAL_DATA, action) => {
         (todo.id === action.id) ? {...todo, completed: !todo.completed} : todo
       )
     default:
-      return false
+      return state
   }
 
 }
